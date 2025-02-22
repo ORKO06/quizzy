@@ -11,6 +11,9 @@ Detailed performance analytics
 Consent management system
 Progress tracking and quiz state management
 
+## Demo
+https://www.veed.io/view/d660d6da-7d69-4246-a07f-89eb9df98059?panel=share
+
 ## Prerequisites
 
 Node.js 18.17 or later
@@ -126,10 +129,6 @@ The application implements various state transitions:
 Quiz Status Transitions:
 
 not_started → in_progress → completed
-
-Question Transitions:
-
-Loading → Active → Answered/Timeout → Next
 
 ## Score Updates:
 
