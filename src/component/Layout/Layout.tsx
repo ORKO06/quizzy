@@ -1,5 +1,7 @@
-import React, { ReactNode } from "react";
+"use client";
+import React, { ReactNode, useCallback, useEffect, useState } from "react";
 import { LayoutContainer } from "./styled";
+import { useRouter } from "next/navigation";
 
 export interface ILayout {
   children: ReactNode;

@@ -16,7 +16,7 @@ export const QuizOptionContainer = styled.div<{ bgcolor?: string; selected?: boo
 export const HeaderElement = styled.div({
   display: "flex",
   justifyContent: "space-between",
-  padding: "8px 16px",
+  padding: "8px 0",
   alignItems: "center",
 });
 
@@ -25,7 +25,7 @@ export const BottomContainer = styled.div({
   flexDirection: "column",
   gap: "24px",
   justifyContent: "space-between",
-  padding: "8px 16px",
+  padding: "8px 0",
   alignItems: "center",
 });
 

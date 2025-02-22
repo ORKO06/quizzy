@@ -31,7 +31,7 @@ export const QuestionItem = styled.li`
 
 export const QuestionText = styled(Header3)`
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 `;
 
 export const AnswerText = styled(Header3)`

@@ -9,6 +9,7 @@ import Header3 from "../../component/common/Typography/Header3";
 import Button from "../../component/common/Typography/Button";
 import ButtonText from "../../component/common/Typography/ButtonText";
 import Loader from "../../component/common/Loader/Loader";
+import { ButtonContainer } from "../../component/Home/styled";
 
 export default function Result() {
   const { state } = useContext(quizContext);
@@ -42,6 +43,10 @@ export default function Result() {
     router.push("/analysis");
   };
 
+  const redirectToHome = () => {
+    router.push("/");
+  };
+
   return (
     <>
       <MainContainer>
@@ -50,9 +55,14 @@ export default function Result() {
           You scored {state.score} out of {state.questions.length}
         </Header2>
         <Header3>Duration: {state.totalTimeSpent}</Header3>
-        <Button background='red'>
-          <ButtonText onClick={redirectToAnalysis}> Analyze </ButtonText>
-        </Button>
+        <ButtonContainer>
+          <Button background='linear-gradient(90deg, #D070E8 0%, #0A79DF 100%)'>
+            <ButtonText onClick={redirectToAnalysis}> Analyze </ButtonText>
+          </Button>
+          <Button background='linear-gradient(90deg, #D070E8 0%, #0A79DF 100%)'>
+            <ButtonText onClick={redirectToHome}> Home </ButtonText>
+          </Button>
+        </ButtonContainer>
       </MainContainer>
     </>
   );

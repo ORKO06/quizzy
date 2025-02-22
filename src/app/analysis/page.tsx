@@ -7,6 +7,7 @@ import Header2 from "../../component/common/Typography/Header2";
 import { MainContainer } from "../../component/global";
 import ResultSection from "../../component/ResultSection/ResultSection";
 import Loader from "../../component/common/Loader/Loader";
+import Back from "../../component/common/Back";
 
 export default function Analysis() {
   const { state } = useContext(quizContext);
@@ -24,6 +25,7 @@ export default function Analysis() {
 
   return (
     <>
+      <Back text='Go to Home' />
       <MainContainer>
         <Header2>Quiz Analysis</Header2>
         <div>

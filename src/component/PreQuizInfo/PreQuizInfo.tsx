@@ -8,6 +8,7 @@ import Button from "../common/Typography/Button";
 import { useRouter } from "next/navigation";
 import { QuizContext } from "../../context";
 import { IQuizDataActionType } from "../../context/quizAction";
+import Back from "../common/Back";
 
 export interface IPreQuizInfo {
   title: string;

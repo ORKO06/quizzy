@@ -12,6 +12,7 @@ export const CardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
+  margin-top: 20px;
 `;
 
 export const AttemptCard = styled.div`

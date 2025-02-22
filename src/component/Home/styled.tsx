@@ -9,9 +9,6 @@ export const HomeContainer = styled.div({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  "@media (max-width: 768px)": {
-    maxWidth: "70%",
-  },
 });
 
 export const HomeContentContainer = styled.div({

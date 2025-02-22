@@ -6,14 +6,13 @@ const ButtonContainer = styled.button<{ background?: string; disabled?: boolean;
     border: "none",
     padding: "16px 24px",
     background: disabled ? "#D3D3D3" : background,
-    borderRadius: "48px",
+    borderRadius: "40px",
     minWidth: "120px",
     textDecoration: "none",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     cursor: disabled ? "not-allowed" : "pointer",
-    // Add hover effect if hoverbackground is provided
     ...(hoverbackground && {
       "&:hover": {
         background: hoverbackground,
@@ -21,6 +20,10 @@ const ButtonContainer = styled.button<{ background?: string; disabled?: boolean;
         outline: "2px solid rgba(255, 255, 255, 0.3)",
       },
     }),
+    "@media (max-width: 524px)": {
+      borderRadius: "36px",
+      padding: "12px 20px",
+    },
   }),
 );
 

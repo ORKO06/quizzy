@@ -14,6 +14,9 @@ export default function Quiz() {
   const { state, dispatch } = useContext(quizContext);
   const router = useRouter();
   const { saveQuizAttempt } = useLocalStorage();
+  if (typeof window == "undefined") {
+    return <></>;
+  }
 
   useEffect(() => {
     if (state && !state.consent) {
